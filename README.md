@@ -7,7 +7,7 @@ Python provides a way of implementing plugin systems using the packaging tools. 
 
 Plugins are usually used when the dependency is an application and libraries that depend on it contribute extension code that may be used within the application. The `master` module implements a `Thing` class that downstream plugins can extend and register for use by the `master` application.
 
-It can also be exploited to structure user-created configuration profiles as python packages. The `master` application can take a parameter to select a plugin and use its attributes to supply configuration parameters. This approach can be convenient for straight-through processes where the configuration is only allowed to change between invocations of the command. Non-python configuration can be packaged in a plugin as well, using the python module to provide access to the installed path.
+It can also be exploited to structure user-created configuration profiles as python packages. The `master` application can take a parameter to select a plugin and use its attributes to supply configuration parameters. This approach can be convenient for straight-through processes where the configuration is only allowed to change between invocations of the command. Non-python configuration can be packaged in a plugin as well, using the python module to provide access to the installed path, and are suitable for configuration that can be reloaded during operation.
 
 ---
 install:
